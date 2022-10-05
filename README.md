@@ -1,5 +1,19 @@
 ## Available Scripts
 
+First, you want to install nodejs, and type,
+
+### `npm install token && npm install react-dotenv`
+
+In the src directory you'll want to create a token.js file with the following line,
+
+### `export const token = '<token>'`
+
+Make sure to replace token with your proper token.
+
+In the parent directory, make sure you create a .env file and add the following line,
+
+### `BASE_URL=`
+
 In the project directory, you can run:
 
 ### `npm i && npm start`
