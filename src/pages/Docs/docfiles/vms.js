@@ -28,6 +28,10 @@ const vms = () => {
         than VMs. We can then reduce the need for a workstation on the HPC and students can test their software in containers on their local workstations. 
         If it works, then it'll work on the cluster. Backups are also much easier and faster with containers, so for our use case, containers make much more sense.
       </p>
+
+      <p>
+        There are a few VM's that needs to be restarted. metagenomics, HostPathogen, Ubuntu-18-VM-4, databases and CentOS-7-VM-3. Some of the vm's can be found underneath mlister, 
+      </p>
     </div>
   );
 }

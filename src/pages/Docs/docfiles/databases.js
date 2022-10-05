@@ -13,7 +13,11 @@ const databases = () => {
       <p>
         The way we use MongoDB on the cluster is very different than the way the other databases are handled. The other databases all have the necessary
         data inside already. MongoDB is what we use to collect data from various software across the HPC, from letting people create appointments
-        and contact us to tracking uptime and various system metrics. <b>This needs to stay running at all costs!</b>
+        and contact us to tracking uptime and various system metrics. <b>This needs to stay running at all costs!<br></br></b><br></br> 
+        
+        Check often to see if its running. Use <code>systemctl status mongod</code> to check its status.<br></br><br></br>
+
+        To restart it, use <code>systemctl restart mongod</code>.
       </p>
     </div>
   );
