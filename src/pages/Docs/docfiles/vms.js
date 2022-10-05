@@ -30,7 +30,9 @@ const vms = () => {
       </p>
 
       <p>
-        There are a few VM's that needs to be restarted. metagenomics, HostPathogen, Ubuntu-18-VM-4, databases and CentOS-7-VM-3. Some of the vm's can be found underneath mlister, 
+        There are a few VM's that needs to be restarted. metagenomics, HostPathogen, Ubuntu-18-VM-4, databases and CentOS-7-VM-3. Some of the vm's can be found underneath mlister.
+        To start use, <code>vboxmanage startvm CentOS-7-VM-3 --type headless</code>.  You can attach to the vm by using the command <code>virtualbox</code>. However, make sure you
+        start the vm as headless and make sure when exiting the vm, you just detach the gui. 
       </p>
     </div>
   );

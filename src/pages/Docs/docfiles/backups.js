@@ -22,7 +22,9 @@ const backups = () => {
       <p>
         Archives are stored on NAS1. These are monthly backups, and are currently not completely automated. These archives take a while to create, so it's a good
         idea to detach the processes and output the results into a text file. These are stored in the format <code>yyyy-mm-dd.username.tar.gz</code>.
-        These are all in the <code>weekly</code> folder in NAS1.
+        These are all in the <code>weekly</code> folder in NAS1. <br></br>
+
+        To backup, use the following command, <code>tar -cvzf <name of backup> <name of directory to backup></name></name></code>
       </p>
 
       <h4>Why Both?</h4>
