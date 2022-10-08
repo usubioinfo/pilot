@@ -34,6 +34,10 @@ const vms = () => {
         To start use, <code>vboxmanage startvm CentOS-7-VM-3 --type headless</code>.  You can attach to the vm by using the command <code>virtualbox</code>. However, make sure you
         start the vm as headless and make sure when exiting the vm, you just detach the gui. 
       </p>
+
+      <p>
+        It is also important on the vms to make sure that the celeryd is running on the relavent web tools. To do this, run <code>python manage.py celeryd -l info</code> running in the background.
+      </p>
     </div>
   );
 }

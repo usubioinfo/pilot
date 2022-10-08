@@ -16,6 +16,8 @@ const backups = () => {
         NAS2 and just copy straight into their directory. No unzipping required. These copies are created via Rsync, with massive custom commands in order to reduce
         the useless data being copied. For future reference, we try to minimize how many <code>.</code> folders we back up. This is because these folders often contain
         a ton of useless data, like various caches and configs. Rsync backups happen every Sunday at 1 AM. 
+
+        The file for the schelduled job can be found at <code>/root/rsync.sh</code>.
       </p>
 
       <h4>Archives</h4>
@@ -25,6 +27,12 @@ const backups = () => {
         These are all in the <code>weekly</code> folder in NAS1. <br></br>
 
         To backup, use the following command, <code>tar -cvzf <name of backup> <name of directory to backup></name></name></code>
+      
+      <br></br>
+      Next, backups can be managed from the server at, "https://cibdata.quickconnect.to/" or "http://129.123.62.201:5000/". You can get the username and password
+      from Aaron and I think Rakesh might also have the document containing the infromation. You sometimes may need to mount the nas folder in the server to the nas folder in the HPC.
+      To do this use, <code>mount -nfs nas:/volume1/BioinfoBackup /nas</code> and <code>mount -nfs nas:/volume2/BioinfoBackup2 /nas2</code>. If this doesn't work, check the ip configuration
+      on the remote server.
       </p>
 
       <h4>Why Both?</h4>

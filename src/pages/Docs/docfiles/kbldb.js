@@ -36,6 +36,19 @@ const kbldb = () => {
         </ul>
       </ul>
 
+      <p> We also need to make sure the following sites are started and loaded with pm2. We inclused whether they are
+        started with start or local.
+      </p>
+      <ul>
+        <li>hbe - start</li>
+        <li>hucopia - local</li>
+        <li>ranchsatdb - start</li>
+        <li>tritkdb - local</li>
+        <li>wheatbackend - start</li>
+        <li>pyseqrna - local</li>
+        <li>api - start</li>
+      </ul>
+
       <p>
         To update KBLDB (add your own functionality) you'll need to have a copy on your machine and push changes to the GitHub repo from there. Once you've 
         pushed your changes, you'll need to run <code>npm run update</code>, described above. If you can, try to keep packages updated, but don't get too aggressive.
