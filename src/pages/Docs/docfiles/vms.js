@@ -38,6 +38,17 @@ const vms = () => {
       <p>
         It is also important on the vms to make sure that the celeryd is running on the relavent web tools. To do this, run <code>python manage.py celeryd -l info</code> running in the background.
       </p>
+
+      <p>
+        Finally, you also need to make sure that the filesystems on the Virtual Machine for deepHPI and PredHPI are mounted with <code>sshfs</code>. First you need to
+        login as cloaiza (Don't sudo in, this causes problems). You can ask arround for the password. Afterwards, to sync the filesystem for PredHPI, use this command,<br></br><br></br>
+
+        <code>sudo sshfs -o allow_other,nonempty cloaiza@129.123.62.5:/home/cloaiza/PredHPI_SLURM /var/www/html/PredHPI/SLURM</code>.
+
+        <br></br><br></br>For deepHPI,<br></br><br></br>
+
+        <code>sudo sshfs -o allow_other,nonempty cloaiza@129.123.62.5:/home/cloaiza/Deepteractomer /var/www/html/Deepteractomer/SLURM</code>
+      </p>
     </div>
   );
 }
