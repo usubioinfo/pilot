@@ -41,7 +41,7 @@ const vms = () => {
 
       <p>
         Finally, you also need to make sure that the filesystems on the Virtual Machine for deepHPI and PredHPI are mounted with <code>sshfs</code>. First you need to
-        login as cloaiza (Don't sudo in, this causes problems). You can ask arround for the password. Afterwards, to sync the filesystem for PredHPI, use this command,<br></br><br></br>
+        login as cloaiza (Use port 10022 to ssh in) (Don't sudo in, this causes problems). You can ask arround for the password. Afterwards, to sync the filesystem for PredHPI, use this command,<br></br><br></br>
 
         <code>sudo sshfs -o allow_other,nonempty cloaiza@129.123.62.5:/home/cloaiza/PredHPI_SLURM /var/www/html/PredHPI/SLURM</code>.
 
