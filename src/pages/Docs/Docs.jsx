@@ -122,6 +122,13 @@ export default class NewComp extends Component {
                   VMs
                 </div>
               </Col>
+              <Col>
+                <div className={"doc-item " + (this.state.doc === 'slurm' ? 'active' : '')} onClick={() => {
+                  this.setState({doc: 'slurm'})
+                }}>
+                  Slurm/Apache
+                </div>
+              </Col>
             </Row>
           </Col>
         </Row>
